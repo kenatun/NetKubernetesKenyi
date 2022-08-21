@@ -13,13 +13,15 @@ spec:
   - host: app.34.69.149.225.nip.io # change the IP address here
     http:
       paths:
-      - path: "/appnet"
+      - pathType: "Prefix"
+        path: "/appnet"
         backend:
           service:
             name: app-service
             port:
               number: 80
-      - path: "/sqlserver"
+      - pathType: "Prefix"
+        path: "/sqlserver"
         backend:
           service:
             name: mssql-service
