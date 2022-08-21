@@ -14,14 +14,14 @@ spec:
     http:
       paths:
       - pathType: "Prefix"
-        path: "/appnet"
+        path: /app(/|$)(.*)
         backend:
           service:
             name: app-service
             port:
               number: 80
       - pathType: "Prefix"
-        path: "/sqlserver"
+        path: /sqlserver(/|$)(.*)
         backend:
           service:
             name: mssql-service
