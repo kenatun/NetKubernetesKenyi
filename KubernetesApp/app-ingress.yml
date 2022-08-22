@@ -20,15 +20,7 @@ spec:
             name: app-service
             port:
               number: 80
-  - host: sql.34.122.219.77.nip.io # change the IP address here
-    http:
-      - pathType: "Prefix"
-        path: /sqlserver
-        backend:
-          service:
-            name: mssql-service
-            port:
-              number: 1433    
+  
 
   
   
