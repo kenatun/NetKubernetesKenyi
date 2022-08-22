@@ -11,17 +11,21 @@ metadata:
 spec:
   rules:
   - http:
-    paths:
-    - backend:
-        service:
-          name: app-service
-          port: 80
-      path: /app(/|$)(.*)
-    - backend:
-        service:
-          name: mssql-service
-          port: 1433
-      path: /sqlserver(
+      paths:
+      - pathType: Prefix
+        path: "/app(/|$)(.*)"
+        backend:
+          service:
+            name: app-service
+            port:
+              number: 80
+      - pathType: Prefix
+        path: "/sqlserver"
+        backend:
+          service:
+            name: mssql-service
+            port:
+              number: 1433
   - host: app.34.122.219.77.nip.io # change the IP address here
     http:
       paths:
