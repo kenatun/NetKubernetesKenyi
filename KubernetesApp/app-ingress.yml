@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: app.104.154.86.190.nip.io # change the IP address here
+  - host: "app.104.154.86.190.nip.io"
     http:
       paths:
       - pathType: Prefix
