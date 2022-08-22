@@ -10,22 +10,6 @@ metadata:
       nginx.ingress.kubernetes.io/rewrite-target: /$1
 spec:
   rules:
-  - http:
-      paths:
-      - pathType: Prefix
-        path: "/app(/|$)(.*)"
-        backend:
-          service:
-            name: app-service
-            port:
-              number: 80
-      - pathType: Prefix
-        path: "/sqlserver"
-        backend:
-          service:
-            name: mssql-service
-            port:
-              number: 1433
   - host: app.34.122.219.77.nip.io # change the IP address here
     http:
       paths:
@@ -36,13 +20,15 @@ spec:
             name: app-service
             port:
               number: 80
+  - host: sql.34.122.219.77.nip.io # change the IP address here
+    http:
       - pathType: "Prefix"
         path: /sqlserver
         backend:
           service:
             name: mssql-service
             port:
-              number: 1433
+              number: 1433    
 
   
   
