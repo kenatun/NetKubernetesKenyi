@@ -7,10 +7,6 @@ metadata:
     cert-manager.io/cluster-issuer: "letsencrypt-palabra-secreta"
 spec:
   ingressClassName: nginx
-  tls:
-  - hosts:
-    - "frontend.35.231.26.204.io"
-    secretName: secret-tls
   rules:
   - host: "app.35.231.26.204.io"
     http:
