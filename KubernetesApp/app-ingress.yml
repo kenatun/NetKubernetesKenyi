@@ -8,12 +8,12 @@ metadata:
 spec:
   tls: # < placing a host in the TLS config will determine what ends up in the cert's subjectAltNames
   - hosts:
-    - frontend.35.237.41.246.nip.io
-    - app.35.237.41.246.nip.io
+    - frontend.vaxidreztech.com
+    - app.vaxidreztech.com
     secretName: testsecret-tls
   ingressClassName: nginx
   rules:
-  - host: "frontend.35.237.41.246.nip.io"
+  - host: "frontend.vaxidreztech.com"
     http:
       paths:
       - pathType: Prefix
@@ -23,7 +23,7 @@ spec:
             name: angular-inmueble-service
             port:
               number: 80
-  - host: "app.35.237.41.246.nip.io"
+  - host: "app.vaxidreztech.com"
     http:
       paths:
       - pathType: Prefix
