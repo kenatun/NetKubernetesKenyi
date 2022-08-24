@@ -6,7 +6,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: "app.vaxidreztech.com"
+  - host: "vaxidreztech.com/backend"
     http:
       paths:
       - pathType: Prefix
@@ -16,7 +16,7 @@ spec:
             name: app-service
             port:
               number: 80
-  - host: "frontend.vaxidreztech.com"
+  - host: "vaxidreztech.com"
     http:
       paths:
       - pathType: Prefix
