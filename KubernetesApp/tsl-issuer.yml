@@ -1,5 +1,5 @@
 apiVersion: cert-manager.io/v1
-kind: Issuer
+kind: ClusterIssuer
 metadata:
   name: letsencrypt
   namespace: cert-manager
@@ -8,7 +8,7 @@ spec:
     server: https://acme-v02.api.letsencrypt.org/directory
     email: vaxi.drez.social@gmail.com
     privateKeySecretRef:
-      name: letsencrypt
+      name: letsencrypt-palabra-secreta
     solvers:
     - http01:
         ingress:
