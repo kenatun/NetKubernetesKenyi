@@ -11,7 +11,7 @@ spec:
   - hosts:
     - "app.35.231.26.204.io"
     - "frontend.35.231.26.204.nip.io"
-  secretName: secret-tls
+    secretName: secret-tls
   rules:
   - host: "app.35.231.26.204.io"
     http:
