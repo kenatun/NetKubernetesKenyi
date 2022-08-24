@@ -4,6 +4,10 @@ metadata:
   name: app-ingress
   namespace: app
 spec:
+  tls:
+    - hosts:
+      - app.vaxidreztech.com
+      secretName: hello-app-tls
   ingressClassName: nginx
   rules:
   - host: "app.vaxidreztech.com"
