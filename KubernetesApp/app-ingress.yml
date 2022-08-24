@@ -6,11 +6,12 @@ metadata:
 spec:
   tls:
     - hosts:
-      - app.vaxidreztech.com
+      - app.35.231.26.204.nip.io
+      - frontend.35.231.26.204.nip.io
       secretName: hello-app-tls
   ingressClassName: nginx
   rules:
-  - host: "app.vaxidreztech.com"
+  - host: "app.35.231.26.204.nip.io"
     http:
       paths:
       - pathType: Prefix
@@ -20,16 +21,16 @@ spec:
             name: app-service
             port:
               number: 80
-  # - host: "vaxidreztech.com"
-  #   http:
-  #     paths:
-  #     - pathType: Prefix
-  #       path: /backend
-  #       backend:
-  #         service:
-  #           name: angular-inmueble-service
-  #           port:
-  #             number: 80
+  - host: "frontend.35.231.26.204.nip.io"
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: angular-inmueble-service
+            port:
+              number: 80
 
 
 
