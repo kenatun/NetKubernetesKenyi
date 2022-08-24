@@ -5,7 +5,6 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
     cert-manager.io/cluster-issuer: letsencrypt
   name: app-ingress
-  namespace: app
 spec:
   tls: # < placing a host in the TLS config will determine what ends up in the cert's subjectAltNames
   - hosts:
