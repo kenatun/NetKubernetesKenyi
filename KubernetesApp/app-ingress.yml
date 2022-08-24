@@ -6,26 +6,26 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: "vaxidreztech.com"
-    http:
-      paths:
-      - pathType: Prefix
-        path: /frontend
-        backend:
-          service:
-            name: app-service
-            port:
-              number: 80
-  - host: "vaxidreztech.com"
+  - host: "app.vaxidreztech.com"
     http:
       paths:
       - pathType: Prefix
         path: /backend
         backend:
           service:
-            name: angular-inmueble-service
+            name: app-service
             port:
               number: 80
+  # - host: "vaxidreztech.com"
+  #   http:
+  #     paths:
+  #     - pathType: Prefix
+  #       path: /backend
+  #       backend:
+  #         service:
+  #           name: angular-inmueble-service
+  #           port:
+  #             number: 80
 
 
 
