@@ -6,11 +6,11 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: "vaxidreztech.com/backend"
+  - host: "vaxidreztech.com"
     http:
       paths:
       - pathType: Prefix
-        path: /
+        path: /frontend
         backend:
           service:
             name: app-service
@@ -20,7 +20,7 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: /
+        path: /backend
         backend:
           service:
             name: angular-inmueble-service
