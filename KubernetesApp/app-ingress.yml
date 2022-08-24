@@ -2,11 +2,15 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    # add an annotation indicating the issuer to use.
+    nginx.ingress.kubernetes.io/rewrite-target: /
     cert-manager.io/cluster-issuer: letsencrypt
   name: app-ingress
   namespace: app
 spec:
+  tls: # < placing a host in the TLS config will determine what ends up in the cert's subjectAltNames
+  - hosts:
+    - frontend.35.231.26.204.nip.io
+    secretName: testsecret-tls
   ingressClassName: nginx
   rules:
   - host: "app.35.231.26.204.nip.io"
@@ -29,10 +33,7 @@ spec:
             name: angular-inmueble-service
             port:
               number: 80
-  tls: # < placing a host in the TLS config will determine what ends up in the cert's subjectAltNames
-  - hosts:
-    - frontend.35.231.26.204.nip.io
-    secretName: myingress-cert
+ 
 
 
 
