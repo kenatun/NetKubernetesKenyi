@@ -12,16 +12,6 @@ spec:
     secretName: testsecret-tls
   ingressClassName: nginx
   rules:
-  - host: "app.35.231.26.204.nip.io"
-    http:
-      paths:
-      - pathType: Prefix
-        path: /
-        backend:
-          service:
-            name: app-service
-            port:
-              number: 80
   - host: "frontend.35.231.26.204.nip.io"
     http:
       paths:
