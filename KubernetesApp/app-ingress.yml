@@ -10,7 +10,7 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: /backend
+        path: /
         backend:
           service:
             name: app-service
