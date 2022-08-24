@@ -4,7 +4,8 @@ metadata:
   name: app-ingress
   namespace: app
   annotations:
-    cert-manager.op/cluster-issuer: "letsencrypt-palabra-secreta"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    cert-manager.io/cluster-issuer: "letsencrypt-palabra-secreta"
 spec:
   ingressClassName: nginx
   tls:
