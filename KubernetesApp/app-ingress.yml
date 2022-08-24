@@ -3,8 +3,6 @@ kind: Ingress
 metadata:
   name: app-ingress
   namespace: app
-  annotations:
-    cert-manager.io/cluster-issuer: "letsencrypt-palabra-secreta"
 spec:
   ingressClassName: nginx
   rules:
