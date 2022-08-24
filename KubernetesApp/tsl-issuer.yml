@@ -6,7 +6,7 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: vaxi.drez.social@gmail.com
+    email: vaxi.drez@gmail.com
     privateKeySecretRef:
       name: letsencrypt-palabra-secreta
     solvers:
