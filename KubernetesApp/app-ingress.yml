@@ -4,11 +4,6 @@ metadata:
   name: app-ingress
   namespace: app
 spec:
-  tls:
-    - hosts:
-      - app.35.231.26.204.nip.io
-      - frontend.35.231.26.204.nip.io
-      secretName: hello-app-tls
   ingressClassName: nginx
   rules:
   - host: "app.35.231.26.204.nip.io"
