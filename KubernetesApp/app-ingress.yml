@@ -12,11 +12,11 @@ spec:
     secretName: testsecret-tls
   ingressClassName: nginx
   rules:
-  - host: "vaxidreztech.com"
+  - host: vaxidreztech.com
     http:
       paths:
       - pathType: Prefix
-        path: /frontend
+        path: /
         backend:
           service:
             name: angular-inmueble-service
