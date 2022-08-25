@@ -2,7 +2,13 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: app-ingress
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
+  tls: # < placing a host in the TLS config will determine what ends up in the cert's subjectAltNames
+  - hosts:
+    - vaxidreztech.com
+    secretName: testsecret-tls
   ingressClassName: nginx
   rules:
   - host: vaxidreztech.com
@@ -12,6 +18,6 @@ spec:
         path: /
         backend:
           service:
-            name: angular-inmueble-service
+            name: app-service
             port:
               number: 80
