@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: inmueble-app
+  name: angular-deploy
   namespace: app
 spec:
   selector:
@@ -16,9 +16,5 @@ spec:
       containers:
       - name: angular-inmueble-app
         image: vaxidrez/angular-kubernetes-vaxi:v3.0
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
         ports:
         - containerPort: 80
