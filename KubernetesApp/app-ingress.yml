@@ -22,13 +22,3 @@ spec:
             name: angular-inmueble-service
             port:
               number: 80
-  - host: "vaxidreztech.com"
-    http:
-      paths:
-      - pathType: Prefix
-        path: /backend
-        backend:
-          service:
-            name: app-service
-            port:
-              number: 80
