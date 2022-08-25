@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: angular-inmueble-app
-        image: vaxidrez/angular-kubernetes-vaxi:v2.0
+        image: vaxidrez/angular-kubernetes-vaxi:v3.0
         resources:
           limits:
             memory: "128Mi"
