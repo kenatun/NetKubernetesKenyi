@@ -16,5 +16,12 @@ spec:
       containers:
       - name: angular-inmueble-app
         image: vaxidrez/angular-kubernetes-vaxi:v3.0
+        resources:
+          requests:
+            cpu: 1
+            memory: 2Gi
+          limits:
+            cpu: 1
+            memory: 4Gi
         ports:
         - containerPort: 80
