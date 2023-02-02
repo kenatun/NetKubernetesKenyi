@@ -16,7 +16,7 @@ public class JwtGenerador : IJwtGenerador
             new Claim("email", usuario.Email!)
         };
 
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Mi palabra secreta"));
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Luna Lunera Lunita"));
         var credenciales = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 
         var tokenDescripcion = new SecurityTokenDescriptor {

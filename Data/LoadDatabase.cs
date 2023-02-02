@@ -10,11 +10,11 @@ public class LoadDatabase {
         if(!usuarioManager.Users.Any())
         {
             var usuario = new Usuario {
-                Nombre = "Vaxi",
-                Apellido = "Drez",
-                Email = "vaxi.drez.social@gmail.com",
-                UserName = "vaxi.drez",
-                Telefono = "98142545"
+                Nombre = "Kenyiyo",
+                Apellido = "Atuncar Poma",
+                Email = "atuncarpoma@gmail.com",
+                UserName = "kenyiyo",
+                Telefono = "945252054"
             };
 
             await usuarioManager.CreateAsync(usuario, "PasswordVxidrez123$");
