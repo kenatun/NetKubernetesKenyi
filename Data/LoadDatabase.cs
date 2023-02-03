@@ -17,7 +17,7 @@ public class LoadDatabase {
                 Telefono = "945252054"
             };
 
-            await usuarioManager.CreateAsync(usuario, "PasswordVxidrez123$");
+            await usuarioManager.CreateAsync(usuario, "75971442kK$");
 
             
         }
