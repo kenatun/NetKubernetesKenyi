@@ -2,11 +2,17 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: app-ingress
-  namespace: app
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
+  tls:
+  - hosts:
+    - app.norinsac.com
+    - main.norinsac.com
+    secretName: testsecret-tls
   ingressClassName: nginx
   rules:
-  - host: "app-34-69-91-215.nip.io"
+  - host: app.norinsac.com
     http:
       paths:
       - pathType: Prefix
@@ -16,7 +22,7 @@ spec:
             name: app-service
             port: 
               number: 80
-  - host: "frontend-34-69-91-215.nip.io"
+  - host: main.norinsac.com
     http:
       paths:
       - pathType: Prefix
