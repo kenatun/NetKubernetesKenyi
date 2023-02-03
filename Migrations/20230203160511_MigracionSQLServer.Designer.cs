@@ -12,8 +12,8 @@ using NetKubernetes.Data;
 namespace NetKubernetes.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220817123655_MigrationSQLServer")]
-    partial class MigrationSQLServer
+    [Migration("20230203160511_MigracionSQLServer")]
+    partial class MigracionSQLServer
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

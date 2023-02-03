@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace NetKubernetes.Migrations
 {
-    public partial class MigrationSQLServer : Migration
+    public partial class MigracionSQLServer : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

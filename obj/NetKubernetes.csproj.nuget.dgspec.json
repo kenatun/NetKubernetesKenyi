@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\NET7\\NetKubernetes\\NetKubernetes.csproj": {}
+    "D:\\NET7\\NetKubernetes\\NetKubernetes.csproj": {}
   },
   "projects": {
-    "C:\\NET7\\NetKubernetes\\NetKubernetes.csproj": {
+    "D:\\NET7\\NetKubernetes\\NetKubernetes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NET7\\NetKubernetes\\NetKubernetes.csproj",
+        "projectUniqueName": "D:\\NET7\\NetKubernetes\\NetKubernetes.csproj",
         "projectName": "NetKubernetes",
-        "projectPath": "C:\\NET7\\NetKubernetes\\NetKubernetes.csproj",
-        "packagesPath": "C:\\Users\\javix\\.nuget\\packages\\",
-        "outputPath": "C:\\NET7\\NetKubernetes\\obj\\",
+        "projectPath": "D:\\NET7\\NetKubernetes\\NetKubernetes.csproj",
+        "packagesPath": "C:\\Users\\atunc\\.nuget\\packages\\",
+        "outputPath": "D:\\NET7\\NetKubernetes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\javix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\atunc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -107,19 +109,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
+              "version": "[6.0.12, 6.0.12]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.7, 6.0.7]"
+              "version": "[6.0.12, 6.0.12]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
+              "version": "[6.0.12, 6.0.12]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
+              "version": "[6.0.12, 6.0.12]"
             }
           ],
           "frameworkReferences": {
@@ -130,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.7.22377.5\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
